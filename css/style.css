@@ -21,6 +21,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     bottom: auto;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
 .carousel-caption h1 {
@@ -30,17 +31,62 @@ body {
 
 /* 卡片樣式 */
 .card {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
 .card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
 .card-img-top {
     height: 200px;
     object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* 手風琴樣式 */
+.accordion-button {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0d6efd;
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+.accordion-body {
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.accordion-body h6 {
+    color: #0d6efd;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.accordion-body ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.accordion-body li {
+    margin-bottom: 0.5rem;
+}
+
+/* 標籤樣式 */
+.badge {
+    padding: 0.5em 1em;
+    font-weight: 500;
 }
 
 /* 區段樣式 */
@@ -51,9 +97,21 @@ section {
 /* 表單樣式 */
 .form-control {
     margin-bottom: 15px;
+    padding: 0.75rem;
 }
 
 /* 動畫延遲 */
 [data-aos] {
     transition-duration: 800ms;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
 }

@@ -78,84 +78,246 @@
         <div class="container">
             <h2 class="text-center mb-5" data-aos="fade-up">熱門景點推薦</h2>
             <div class="row">
-                <!-- 景點卡片 1 -->
+                <!-- 景點卡片 1 - 京都 -->
                 <div class="col-md-4 mb-4" data-aos="fade-up">
                     <div class="card">
                         <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&h=600" class="card-img-top" alt="京都金閣寺">
                         <div class="card-body">
                             <h5 class="card-title">日本京都</h5>
                             <p class="card-text">千年古都京都，擁有眾多世界文化遺產。春季賞櫻、秋季賞楓，金閣寺、清水寺等古寺建築展現日本傳統文化的精髓。</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="accordion" id="kyotoDetails">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kyotoMore">
+                                            查看更多資訊
+                                        </button>
+                                    </h2>
+                                    <div id="kyotoMore" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <h6>必訪景點：</h6>
+                                            <ul>
+                                                <li>金閣寺 - 世界文化遺產，黃金燦爛的建築倒映在鏡湖上</li>
+                                                <li>清水寺 - 懸空的舞台，春櫻秋楓皆美不勝收</li>
+                                                <li>伏見稻荷大社 - 千本鳥居，日本最重要的稻荷神社</li>
+                                            </ul>
+                                            <h6>美食推薦：</h6>
+                                            <ul>
+                                                <li>京都抹茶甜點 - 茶道文化的精緻呈現</li>
+                                                <li>京都拉麵 - 獨特的濃厚湯頭</li>
+                                                <li>懷石料理 - 傳統的日本高級料理</li>
+                                            </ul>
+                                            <h6>交通建議：</h6>
+                                            <p>購買京都巴士一日券，方便遊覽各大景點。或租借自行車，體驗在小巷中穿梭的樂趣。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
                                 <span class="badge bg-info">文化古蹟</span>
                                 <small class="text-muted">最佳旅遊季節：3-5月、10-11月</small>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- 景點卡片 2 -->
+                <!-- 景點卡片 2 - 聖托里尼 -->
                 <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card">
                         <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&h=600" class="card-img-top" alt="聖托里尼藍頂教堂">
                         <div class="card-body">
                             <h5 class="card-title">希臘聖托里尼</h5>
                             <p class="card-text">愛琴海上的明珠，純白建築與蔚藍海洋構成完美畫面。伊亞村的日落、藍頂教堂，還有火山地質形成的黑沙灘，讓人流連忘返。</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="accordion" id="santoriniDetails">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#santoriniMore">
+                                            查看更多資訊
+                                        </button>
+                                    </h2>
+                                    <div id="santoriniMore" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <h6>必訪景點：</h6>
+                                            <ul>
+                                                <li>伊亞村 - 最美日落與白色建築群</li>
+                                                <li>紅沙灘 - 獨特的火山地質景觀</li>
+                                                <li>費拉小鎮 - 懸崖上的浪漫市集</li>
+                                            </ul>
+                                            <h6>特色體驗：</h6>
+                                            <ul>
+                                                <li>帆船遊覽 - 欣賞火山島嶼地形</li>
+                                                <li>葡萄酒莊園 - 品嚐當地特色葡萄酒</li>
+                                                <li>懸崖餐廳 - 享受浪漫晚餐</li>
+                                            </ul>
+                                            <h6>住宿建議：</h6>
+                                            <p>建議入住伊亞或費拉的懸崖酒店，欣賞無敵海景。提前3-6個月預訂最佳房型。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
                                 <span class="badge bg-primary">海島度假</span>
                                 <small class="text-muted">最佳旅遊季節：4-10月</small>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- 景點卡片 3 -->
+                <!-- 景點卡片 3 - 台北 -->
                 <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card">
                         <img src="https://images.unsplash.com/photo-1470004914212-05527e49370b?auto=format&fit=crop&w=800&h=600" class="card-img-top" alt="台北101夜景">
                         <div class="card-body">
                             <h5 class="card-title">台灣台北</h5>
                             <p class="card-text">結合現代與傳統的大都市，台北101、故宮博物院、龍山寺、夜市美食，體驗豐富的城市文化與美食饗宴。</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="accordion" id="taipeiDetails">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#taipeiMore">
+                                            查看更多資訊
+                                        </button>
+                                    </h2>
+                                    <div id="taipeiMore" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <h6>必訪景點：</h6>
+                                            <ul>
+                                                <li>台北101 - 登上觀景台，俯瞰台北市景</li>
+                                                <li>故宮博物院 - 欣賞中華文化瑰寶</li>
+                                                <li>九份老街 - 感受懷舊山城風情</li>
+                                            </ul>
+                                            <h6>夜市美食：</h6>
+                                            <ul>
+                                                <li>士林夜市 - 必吃大餅包小餅、士林大香腸</li>
+                                                <li>寧夜市 - 特色蚵仔煎、臭豆腐</li>
+                                                <li>饒河街夜市 - 知名胡椒餅、藥燉排骨</li>
+                                            </ul>
+                                            <h6>交通建議：</h6>
+                                            <p>搭乘捷運最方便，購買悠遊卡暢遊台北。往返機場可搭乘機場捷運。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
                                 <span class="badge bg-success">美食文化</span>
                                 <small class="text-muted">最佳旅遊季節：10-4月</small>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- 景點卡片 4 -->
+                <!-- 景點卡片 4 - 馬丘比丘 -->
                 <div class="col-md-4 mb-4" data-aos="fade-up">
                     <div class="card">
                         <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=800&h=600" class="card-img-top" alt="馬丘比丘遺跡">
                         <div class="card-body">
                             <h5 class="card-title">秘魯馬丘比丘</h5>
                             <p class="card-text">印加帝國的失落古城，坐落在安地斯山脈中。神秘的石造建築，讓人嘆為觀止的山巒景致，世界七大奇蹟之一。</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="accordion" id="machuPicchuDetails">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#machuPicchuMore">
+                                            查看更多資訊
+                                        </button>
+                                    </h2>
+                                    <div id="machuPicchuMore" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <h6>參觀重點：</h6>
+                                            <ul>
+                                                <li>太陽門 - 觀賞日出最佳位置</li>
+                                                <li>印加橋 - 古老的工程技術展現</li>
+                                                <li>太陽神殿 - 印加帝國的建築傑作</li>
+                                            </ul>
+                                            <h6>實用建議：</h6>
+                                            <ul>
+                                                <li>提前2-3個月預訂入場券</li>
+                                                <li>建議住宿馬丘比丘山腳下的溫泉鎮</li>
+                                                <li>準備防曬及防雨裝備</li>
+                                            </ul>
+                                            <h6>交通資訊：</h6>
+                                            <p>從庫斯科搭乘火車到溫泉鎮，再轉乘接駁巴士上山。建議預留2-3天時間適應高原氣候。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
                                 <span class="badge bg-warning text-dark">探險古蹟</span>
                                 <small class="text-muted">最佳旅遊季節：5-10月</small>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- 景點卡片 5 -->
+                <!-- 景點卡片 5 - 杜拜 -->
                 <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card">
                         <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&h=600" class="card-img-top" alt="杜拜夜景">
                         <div class="card-body">
                             <h5 class="card-title">阿聯杜拜</h5>
                             <p class="card-text">沙漠中崛起的未來之城，哈里發塔、棕櫚島、沙漠衝沙，體驗奢華與自然的完美結合，創造難忘的中東之旅。</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="accordion" id="dubaiDetails">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dubaiMore">
+                                            查看更多資訊
+                                        </button>
+                                    </h2>
+                                    <div id="dubaiMore" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <h6>奢華體驗：</h6>
+                                            <ul>
+                                                <li>哈里發塔 - 世界最高建築，At The Top觀景台</li>
+                                                <li>帆船飯店 - 享受七星級奢華服務</li>
+                                                <li>黃金市集 - 體驗阿拉伯傳統市集</li>
+                                            </ul>
+                                            <h6>特色活動：</h6>
+                                            <ul>
+                                                <li>沙漠衝沙 - 刺激的沙漠探險之旅</li>
+                                                <li>杜拜購物節 - 全球最大購物慶典</li>
+                                                <li>杜拜噴泉表演 - 世界最大音樂噴泉</li>
+                                            </ul>
+                                            <h6>注意事項：</h6>
+                                            <p>注意當地穿著禮儀，室內建議攜帶薄外套，夏季溫度極高要注意防曬。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
                                 <span class="badge bg-danger">奢華體驗</span>
                                 <small class="text-muted">最佳旅遊季節：11-3月</small>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- 景點卡片 6 -->
+                <!-- 景點卡片 6 - 冰島 -->
                 <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card">
                         <img src="https://images.unsplash.com/photo-1520769945061-0a448c463865?auto=format&fit=crop&w=800&h=600" class="card-img-top" alt="冰島極光">
                         <div class="card-body">
                             <h5 class="card-title">冰島雷克雅維克</h5>
                             <p class="card-text">北歐的自然天堂，極光、冰川、間歇泉、火山，豐富的地理景觀。藍湖溫泉療養，感受大自然的神奇魅力。</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="accordion" id="icelandDetails">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icelandMore">
+                                            查看更多資訊
+                                        </button>
+                                    </h2>
+                                    <div id="icelandMore" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <h6>自然奇觀：</h6>
+                                            <ul>
+                                                <li>極光 - 冬季夜空中的絢麗光影</li>
+                                                <li>傑古沙龍冰河湖 - 漂浮的藍色冰山</li>
+                                                <li>間歇泉 - 史托克間歇泉噴發奇景</li>
+                                            </ul>
+                                            <h6>特色體驗：</h6>
+                                            <ul>
+                                                <li>藍湖溫泉 - 世界級地熱溫泉SPA</li>
+                                                <li>冰川健行 - 專業嚮導帶領探險</li>
+                                                <li>環島自駕 - 探索冰島絕美風光</li>
+                                            </ul>
+                                            <h6>旅行建議：</h6>
+                                            <p>建議租車自駕，準備保暖防水衣物，預訂極光團要注意天氣狀況。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
                                 <span class="badge bg-info">自然奇觀</span>
                                 <small class="text-muted">最佳旅遊季節：9-3月(極光季)</small>
                             </div>
