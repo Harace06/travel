@@ -1,0 +1,59 @@
+/* 全局樣式 */
+body {
+    padding-top: 56px;
+}
+
+/* 英雄區域樣式 */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    background-color: #000;
+}
+
+.hero-section img {
+    height: 100vh;
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+}
+
+.carousel-caption h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* 卡片樣式 */
+.card {
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* 區段樣式 */
+section {
+    padding: 80px 0;
+}
+
+/* 表單樣式 */
+.form-control {
+    margin-bottom: 15px;
+}
+
+/* 動畫延遲 */
+[data-aos] {
+    transition-duration: 800ms;
+}
